@@ -2,9 +2,9 @@ Hello and welcome to this blog. Edit the `index.md` file to change this content.
 
 ![Image of A Better Way](MyLogo.png)
 
-## A Better Way 
+## A Better Way ... 
 
-## All Things OSINT, Business Intelligence, Design & Puzzles ...
+## All Things OSINT, Business Intelligence, Design & Puzzles.
 
 ## Under Construction. Opening soon ...
 
