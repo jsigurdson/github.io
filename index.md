@@ -2,7 +2,7 @@
 ## ![Image of A Better Way](MyLogo_cropped.png) 
 
 ## All Things OSINT, Business Intelligence, Design & Puzzles.
-## Under Construction. Opening soon ...
+## ![](Under-construction_15.png) Opening soon ...
 
 ## Website: [osint-bi.net ](https://osint-bi.net) 
-![](Under-construction_25.png) ...
+
