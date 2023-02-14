@@ -1,5 +1,5 @@
 ## A Better Way ... 
-## ![Image of A Better Way](MyLogo.png) 
+## ![Image of A Better Way](MyLogo_cropped.png) 
 
 ## All Things OSINT, Business Intelligence, Design & Puzzles.
 ## Under Construction. Opening soon ...
