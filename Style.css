@@ -1,0 +1,7 @@
+CSS
+body {
+    background-image: url('background_Elephant.png');  /* Replace with your image path */
+    background-repeat: repeat;  /* Optional, controls how the image repeats */
+    background-position: center;  /* Optional, controls the starting position */
+    background-size: cover;     /* Optional, controls how the image fills the area */
+}
