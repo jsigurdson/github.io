@@ -15,7 +15,7 @@
   <ul id="article-list"></ul>
 
   <script>
-    const folderPath = "\."; // Replace with your actual folder path
+    const folderPath = ""; // Replace with your actual folder path
     const articleList = document.getElementById("article-list");
 
     // Function to update the list
@@ -27,7 +27,7 @@
           articleList.innerHTML = ""; // Clear existing list items
 
           articles.forEach(article => {
-            if (article.startsWith("article_")) {
+            if (article.startsWith("Article_")) {
               const listItem = document.createElement("li");
               listItem.textContent = article;
               articleList.appendChild(listItem);
