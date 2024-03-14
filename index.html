@@ -10,7 +10,38 @@
 <h2>Testing... </h2>
 
     <p> Hello... Anyone here?</p>
-    
-  </body>
+
+  <h1>Blog Posts</h1>
+  <ul id="article-list"></ul>
+
+  <script>
+    const folderPath = "\."; // Replace with your actual folder path
+    const articleList = document.getElementById("article-list");
+
+    // Function to update the list
+    function updateList() {
+      fetch(folderPath)
+        .then(response => response.text()) // Get folder contents as text
+        .then(text => {
+          const articles = text.split(/\r?\n/); // Split text into lines (articles)
+          articleList.innerHTML = ""; // Clear existing list items
+
+          articles.forEach(article => {
+            if (article.startsWith("article_")) {
+              const listItem = document.createElement("li");
+              listItem.textContent = article;
+              articleList.appendChild(listItem);
+            }
+          });
+        })
+        .catch(error => console.error(error)); // Handle errors
+    }
+
+    // Call the update function on page load and at regular intervals
+    updateList();
+    setInterval(updateList, 5000); // Update every 5 seconds (adjust as needed)
+  </script>
+
+</body>
 </html>
 
