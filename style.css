@@ -1,7 +1,29 @@
 CSS
-h3 {
-    background-image: url('background_Elephant.jpg');  /* Replace with your image path */
-    background-repeat: no-repeat;  /* Optional, controls how the image repeats */
-    background-position: center;  /* Optional, controls the starting position */
-    background-size: cover;     /* Optional, controls how the image fills the area */
+
+/*
+body {
+  background-image: url('your_image.jpg');
+  background-size: cover;
+}
+*/
+
+@media (max-width: 768px) {
+  /* Styles for screens less than 768px wide */
+  body {
+    background-size: contain; /* Or adjust size as needed for smaller screens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for screens between 768px and 1024px wide */
+  body {
+    background-size: 100% auto; /* Or adjust size as needed for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Styles for screens wider than 1024px */
+  body {
+    background-size: cover; /* Maintain cover for larger screens */
+  }
 }
