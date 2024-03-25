@@ -9,42 +9,18 @@
 <body style="background-image: url('forest_elephant_4k-1920x1080.jpg'); height: 90vh; background-repeat: no-repeat; background-size: cover; background-position: center center;>
   <h2>Testing... </h2>
 
-    <p> Hello... Anyone here?</p>
+  <p> Hello... Anyone here?</p>
 
   <h1>Blog Posts</h1>
-  <ul id="article-list"></ul>
+  <ul id="article-list">
+    <li>Article 1</li>
+    <li>Article 2</li>
+    <li>Article 3</li>
+  </ul>
 
   <div class="background-container">
     <p class="donation-text">Please Donate</p>
   </div> 
-  
-  <script>
-    const folderPath = ""; // Replace with your actual folder path
-    const articleList = document.getElementById("article-list");
-
-    // Function to update the list
-    function updateList() {
-      fetch(folderPath)
-        .then(response => response.text()) // Get folder contents as text
-        .then(text => {
-          const articles = text.split(/\r?\n/); // Split text into lines (articles)
-          articleList.innerHTML = ""; // Clear existing list items
-
-          articles.forEach(article => {
-            if (article.startsWith("Article_")) {
-              const listItem = document.createElement("li");
-              listItem.textContent = article;
-              articleList.appendChild(listItem);
-            }
-          });
-        })
-        .catch(error => console.error(error)); // Handle errors
-    }
-
-    // Call the update function on page load and at regular intervals
-    updateList();
-    setInterval(updateList, 5000); // Update every 5 seconds (adjust as needed)
-  </script>
 
 </body>
 </html>
