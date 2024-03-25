@@ -1,5 +1,9 @@
 CSS
 
+p {
+  color: white;  
+}  
+
 @media (max-width: 768px) {
   /* Styles for screens less than 768px wide */
   body {
