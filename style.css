@@ -1,12 +1,5 @@
 CSS
 
-/*
-body {
-  background-image: url('your_image.jpg');
-  background-size: cover;
-}
-*/
-
 @media (max-width: 768px) {
   /* Styles for screens less than 768px wide */
   body {
@@ -14,7 +7,7 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   /* Styles for screens between 768px and 1024px wide */
   body {
     background-size: 100% auto; /* Or adjust size as needed for medium screens */
